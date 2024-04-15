@@ -4,6 +4,7 @@ const cors = require('cors')
 const express = require('express')
 
 const app = express();
+console.log("Server Started");
 
 app.use(express.json());
 app.use(cors())
@@ -63,5 +64,4 @@ app.delete('/delete', async function (req, res) {
         msg: "Data deleted successfully!"
     })
 })
-
 app.listen(3000)
